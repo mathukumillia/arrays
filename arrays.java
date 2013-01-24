@@ -6,12 +6,17 @@ public class arrays {
 
 		System.out.println(avg(nums));
 	}
-	public static double avg(int[] nums){
+	
+	public static double sum(int[] nums){
 		double answer = 0;
-
 		for(int i = 0; i < nums.length; i++){
 			answer+=nums[i];
 		}
+		return answer;
+	}
+
+	public static double avg(int[] nums){
+		double answer = sum(nums);
 
 		answer = answer/nums.length;
 
